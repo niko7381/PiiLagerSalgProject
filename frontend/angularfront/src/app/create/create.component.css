@@ -1,0 +1,19 @@
+.overskrift {
+  text-align: center;
+  margin-top: 1%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.knap {
+  width: 7%;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+}
