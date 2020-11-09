@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.dummy {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.linksVandret {
+  color: white;
+  margin-left: 10px;
+  float: right;
+  text-decoration: none;
+
+}
+
+@media(min-width: 720px) {
+  .sidenav{
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.full-width-table {
+  width: 100%;
+}
+
+.main-table {
+  width: auto;
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1%;
+}
