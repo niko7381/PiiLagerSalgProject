@@ -26,7 +26,23 @@
   margin-left: 10px;
   float: right;
   text-decoration: none;
+}
 
+.table-button {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn-create {
+  font-size: xx-large;
+  background-color: rgb(98, 3, 175);
+  color: white;
+  text-decoration: none;
 }
 
 @media(min-width: 720px) {

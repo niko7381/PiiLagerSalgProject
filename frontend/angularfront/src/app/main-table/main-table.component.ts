@@ -16,7 +16,7 @@ export class MainTableComponent implements AfterViewInit, OnInit {
   dataSource: MainTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['title', 'varenummer', 'placering', 'pris', 'antal', 'status'];
 
   ngOnInit() {
     this.dataSource = new MainTableDataSource();
@@ -27,4 +27,8 @@ export class MainTableComponent implements AfterViewInit, OnInit {
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
   }
+
+  // applyFilter(filterValue: string) {
+  //   this.dataSource.filter = filterValue.trim().toLowerCase();
+  // }
 }

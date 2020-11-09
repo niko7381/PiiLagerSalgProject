@@ -2,6 +2,7 @@ import { DataSource } from '@angular/cdk/collections';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { Observable, of as observableOf, merge } from 'rxjs';
 
 
@@ -53,7 +54,7 @@ export class MainTableDataSource extends DataSource<MainTableItem> {
     const dataMutations = [
       observableOf(this.data),
       this.paginator.page,
-      this.sort.sortChange
+      this.sort.sortChange,
     ];
 
     return merge(...dataMutations).pipe(map(() => {

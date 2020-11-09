@@ -22,11 +22,11 @@
       </button>
       <span>PiLagerProjekt</span>
       <span class="dummy"></span>
-      <a class="linksVandret" mat-list-item [routerLink]="'/main-table'">Table</a>
+      <a class="linksVandret" mat-list-item [routerLink]="''">Table</a>
       <a class="linksVandret" mat-list-item [routerLink]="'/about'">Om</a>
       <a class="linksVandret" mat-list-item [routerLink]="'/kontakt'">Kontakt</a>
     </mat-toolbar>
     <!-- Add Content here -->
-    <app-main-table></app-main-table>
-  </mat-sidenav-content>
+    <router-outlet></router-outlet>
+    </mat-sidenav-content>
 </mat-sidenav-container>
